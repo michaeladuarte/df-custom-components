@@ -1,0 +1,74 @@
+.cta-component-container  {
+  --introColor: #0b7abf;
+  --introBackgroundColor: #f2f2f2;
+  --actionColor: #ffffff;
+  --actionBackgroundColor: #0a7bbf;
+  display: -webkit-flex;
+  display: flex;
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-component-container:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.cta-component-container .col-1-2 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.875em;
+  text-align: center;
+  width: 50%;
+}
+
+.cta-component-container .col-1-2--intro {
+  background: var(--introBackgroundColor);
+  color: var(--introColor);
+  position: relative;
+}
+
+.cta-component-container .col-1-2--intro:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent var(--introBackgroundColor);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+}
+
+.cta-component-container .col-1-2--action {
+  background-color: var(--actionBackgroundColor);
+  color: var(--actionColor);
+}
+
+.cta-component-container h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cta-component-container p {
+  font-size: 1.125em;
+  margin-bottom: 1.375em;
+}
+
+.cta-component-container .btn {
+  background-color: var(--actionColor);
+  border-radius: 5px;
+  color: var(--actionBackgroundColor);;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.625em 0.875em;
+  text-decoration: none;
+}

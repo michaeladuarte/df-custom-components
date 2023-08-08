@@ -1,0 +1,14 @@
+{
+    "name": "kevinfunk/eudaimonia_components",
+    "description": "Custom component for Eudaimonia.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Kevin Funk",
+            "email": "kevin@kevinfunk.com"
+        }
+    ]
+}
